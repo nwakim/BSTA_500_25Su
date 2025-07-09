@@ -74,21 +74,21 @@
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#example-creating-an-html-file",
     "title": "R05: Quarto in R",
     "section": "Example: creating an html file",
-    "text": "Example: creating an html file\n\n\n\n.qmd file\n\n\n\n\n\n\n\n\n\n\n.html output"
+    "text": "Example: creating an html file\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#quarto-.qmd-file-code-text",
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#quarto-.qmd-file-code-text",
     "title": "R05: Quarto in R",
     "section": "Quarto = .qmd file = Code + text",
-    "text": "Quarto = .qmd file = Code + text\nWe can take .qmd files containing code (R and other types) + plain text (like we might make in Word), and then to it other formats (html, pdf, Word, etc) that nicely display the code and text!\n\n\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto = .qmd file = Code + text\nWe can take .qmd files containing code (R and other types) + plain text (like we might make in Word), and then to it other formats (html, pdf, Word, etc) that nicely display the code and text!\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#before-we-get-further-in-.qmd-files",
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#before-we-get-further-in-.qmd-files",
     "title": "R05: Quarto in R",
     "section": "Before we get further in .qmd files",
-    "text": "Before we get further in .qmd files\n\nLet’s make sure we all have Rstudio open\nAnd then open your EPI_525_F24 project!\n\n \n\nSteps for making a Quarto file\n\nCreate a Quarto file (.qmd)\nEdit a Quarto file (.qmd)\nSave the Quarto file (.qmd)\nCreate html file"
+    "text": "Before we get further in .qmd files\n\nLet’s make sure we all have Rstudio open\nAnd then open your EPI_525_F24 project!\n\n \nSteps for making a Quarto file\n\nCreate a Quarto file (.qmd)\nEdit a Quarto file (.qmd)\nSave the Quarto file (.qmd)\nCreate html file"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#create-a-quarto-file-.qmd",
@@ -116,7 +116,7 @@
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#create-html-file",
     "title": "R05: Quarto in R",
     "section": "4. Create html file",
-    "text": "4. Create html file\nWe create the html file by rendering the .qmd file.\nTwo options:\n\nclick on the Render icon  at the top of the editor window,\nor use keyboard shortcuts\n\nMac: Command+Shift+K\nPC: Ctrl+Shift+K\n\n\n\nA new window will open with the html output.\nYou will now see both .qmd and .html files in the folder where you saved the .qmd file.\n\n\n\n\n\n\n\nNote\n\n\n\n\nThe template .qmd file that RStudio creates will render to an html file by default.\nThe output format can be changed to create a Word doc, pdf, slides, etc."
+    "text": "4. Create html file\nWe create the html file by rendering the .qmd file.\nTwo options:\n\nclick on the Render icon  at the top of the editor window,\nor use keyboard shortcuts\n\nMac: Command+Shift+K\nPC: Ctrl+Shift+K\n\n\n\nA new window will open with the html output.\nYou will now see both .qmd and .html files in the folder where you saved the .qmd file.\n\n\n\n\n\n\n\nNote\n\n\n\nThe template .qmd file that RStudio creates will render to an html file by default.\nThe output format can be changed to create a Word doc, pdf, slides, etc."
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#tip-changing-the-render-view",
@@ -130,14 +130,14 @@
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#qmd-vs.-its-.html-output",
     "title": "R05: Quarto in R",
     "section": ".qmd vs. its .html output",
-    "text": ".qmd vs. its .html output\n\n\n\n.qmd file\n\n\n\n\n\n\n\n\n\n\n.html output"
+    "text": ".qmd vs. its .html output\n\n\n.qmd file\n\n\n\n\n\n\n\n\n.html output"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#r-packages-1",
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#r-packages-1",
     "title": "R05: Quarto in R",
     "section": "R Packages",
-    "text": "R Packages\nA good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4\n\n\n\nPackages contain additional functions and data"
+    "text": "R Packages\nA good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\nModernDive Figure 1.4\nPackages contain additional functions and data"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#installing-packages",
@@ -158,7 +158,7 @@
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#load-packages-with-library-command",
     "title": "R05: Quarto in R",
     "section": "Load packages with library() command",
-    "text": "Load packages with library() command\n\nTip: at the top of your Rmd file, create a chunk that loads all of the R packages you want to use in that file.\nUse the library() command to load each required package.\nPackages need to be reloaded every time you open Rstudio.\n\n\nlibrary(dplyr)    # run this every time you open Rstudio\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\n\nYou can use a function without loading the package with PackageName::CommandName\n\n\ndplyr::arrange(iris, Petal.Width)   # what does arrange do?\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width    Species\n1            4.9         3.1          1.5         0.1     setosa\n2            4.8         3.0          1.4         0.1     setosa\n3            4.3         3.0          1.1         0.1     setosa\n4            5.2         4.1          1.5         0.1     setosa\n5            4.9         3.6          1.4         0.1     setosa\n6            5.1         3.5          1.4         0.2     setosa\n7            4.9         3.0          1.4         0.2     setosa\n8            4.7         3.2          1.3         0.2     setosa\n9            4.6         3.1          1.5         0.2     setosa\n10           5.0         3.6          1.4         0.2     setosa\n11           5.0         3.4          1.5         0.2     setosa\n12           4.4         2.9          1.4         0.2     setosa\n13           5.4         3.7          1.5         0.2     setosa\n14           4.8         3.4          1.6         0.2     setosa\n15           5.8         4.0          1.2         0.2     setosa\n16           5.4         3.4          1.7         0.2     setosa\n17           4.6         3.6          1.0         0.2     setosa\n18           4.8         3.4          1.9         0.2     setosa\n19           5.0         3.0          1.6         0.2     setosa\n20           5.2         3.5          1.5         0.2     setosa\n21           5.2         3.4          1.4         0.2     setosa\n22           4.7         3.2          1.6         0.2     setosa\n23           4.8         3.1          1.6         0.2     setosa\n24           5.5         4.2          1.4         0.2     setosa\n25           4.9         3.1          1.5         0.2     setosa\n26           5.0         3.2          1.2         0.2     setosa\n27           5.5         3.5          1.3         0.2     setosa\n28           4.4         3.0          1.3         0.2     setosa\n29           5.1         3.4          1.5         0.2     setosa\n30           4.4         3.2          1.3         0.2     setosa\n31           5.1         3.8          1.6         0.2     setosa\n32           4.6         3.2          1.4         0.2     setosa\n33           5.3         3.7          1.5         0.2     setosa\n34           5.0         3.3          1.4         0.2     setosa\n35           4.6         3.4          1.4         0.3     setosa\n36           5.1         3.5          1.4         0.3     setosa\n37           5.7         3.8          1.7         0.3     setosa\n38           5.1         3.8          1.5         0.3     setosa\n39           5.0         3.5          1.3         0.3     setosa\n40           4.5         2.3          1.3         0.3     setosa\n41           4.8         3.0          1.4         0.3     setosa\n42           5.4         3.9          1.7         0.4     setosa\n43           5.7         4.4          1.5         0.4     setosa\n44           5.4         3.9          1.3         0.4     setosa\n45           5.1         3.7          1.5         0.4     setosa\n46           5.0         3.4          1.6         0.4     setosa\n47           5.4         3.4          1.5         0.4     setosa\n48           5.1         3.8          1.9         0.4     setosa\n49           5.1         3.3          1.7         0.5     setosa\n50           5.0         3.5          1.6         0.6     setosa\n51           4.9         2.4          3.3         1.0 versicolor\n52           5.0         2.0          3.5         1.0 versicolor\n53           6.0         2.2          4.0         1.0 versicolor\n54           5.8         2.7          4.1         1.0 versicolor\n55           5.7         2.6          3.5         1.0 versicolor\n56           5.5         2.4          3.7         1.0 versicolor\n57           5.0         2.3          3.3         1.0 versicolor\n58           5.6         2.5          3.9         1.1 versicolor\n59           5.5         2.4          3.8         1.1 versicolor\n60           5.1         2.5          3.0         1.1 versicolor\n61           6.1         2.8          4.7         1.2 versicolor\n62           5.8         2.7          3.9         1.2 versicolor\n63           5.5         2.6          4.4         1.2 versicolor\n64           5.8         2.6          4.0         1.2 versicolor\n65           5.7         3.0          4.2         1.2 versicolor\n66           5.5         2.3          4.0         1.3 versicolor\n67           5.7         2.8          4.5         1.3 versicolor\n68           6.6         2.9          4.6         1.3 versicolor\n69           5.6         2.9          3.6         1.3 versicolor\n70           6.1         2.8          4.0         1.3 versicolor\n71           6.4         2.9          4.3         1.3 versicolor\n72           6.3         2.3          4.4         1.3 versicolor\n73           5.6         3.0          4.1         1.3 versicolor\n74           5.5         2.5          4.0         1.3 versicolor\n75           5.6         2.7          4.2         1.3 versicolor\n76           5.7         2.9          4.2         1.3 versicolor\n77           6.2         2.9          4.3         1.3 versicolor\n78           5.7         2.8          4.1         1.3 versicolor\n79           7.0         3.2          4.7         1.4 versicolor\n80           5.2         2.7          3.9         1.4 versicolor\n81           6.1         2.9          4.7         1.4 versicolor\n82           6.7         3.1          4.4         1.4 versicolor\n83           6.6         3.0          4.4         1.4 versicolor\n84           6.8         2.8          4.8         1.4 versicolor\n85           6.1         3.0          4.6         1.4 versicolor\n86           6.1         2.6          5.6         1.4  virginica\n87           6.4         3.2          4.5         1.5 versicolor\n88           6.9         3.1          4.9         1.5 versicolor\n89           6.5         2.8          4.6         1.5 versicolor\n90           5.9         3.0          4.2         1.5 versicolor\n91           5.6         3.0          4.5         1.5 versicolor\n92           6.2         2.2          4.5         1.5 versicolor\n93           6.3         2.5          4.9         1.5 versicolor\n94           6.0         2.9          4.5         1.5 versicolor\n95           5.4         3.0          4.5         1.5 versicolor\n96           6.7         3.1          4.7         1.5 versicolor\n97           6.0         2.2          5.0         1.5  virginica\n98           6.3         2.8          5.1         1.5  virginica\n99           6.3         3.3          4.7         1.6 versicolor\n100          6.0         2.7          5.1         1.6 versicolor\n101          6.0         3.4          4.5         1.6 versicolor\n102          7.2         3.0          5.8         1.6  virginica\n103          6.7         3.0          5.0         1.7 versicolor\n104          4.9         2.5          4.5         1.7  virginica\n105          5.9         3.2          4.8         1.8 versicolor\n106          6.3         2.9          5.6         1.8  virginica\n107          7.3         2.9          6.3         1.8  virginica\n108          6.7         2.5          5.8         1.8  virginica\n109          6.5         3.0          5.5         1.8  virginica\n110          6.3         2.7          4.9         1.8  virginica\n111          7.2         3.2          6.0         1.8  virginica\n112          6.2         2.8          4.8         1.8  virginica\n113          6.1         3.0          4.9         1.8  virginica\n114          6.4         3.1          5.5         1.8  virginica\n115          6.0         3.0          4.8         1.8  virginica\n116          5.9         3.0          5.1         1.8  virginica\n117          5.8         2.7          5.1         1.9  virginica\n118          6.4         2.7          5.3         1.9  virginica\n119          7.4         2.8          6.1         1.9  virginica\n120          5.8         2.7          5.1         1.9  virginica\n121          6.3         2.5          5.0         1.9  virginica\n122          6.5         3.2          5.1         2.0  virginica\n123          5.7         2.5          5.0         2.0  virginica\n124          5.6         2.8          4.9         2.0  virginica\n125          7.7         2.8          6.7         2.0  virginica\n126          7.9         3.8          6.4         2.0  virginica\n127          6.5         3.0          5.2         2.0  virginica\n128          7.1         3.0          5.9         2.1  virginica\n129          7.6         3.0          6.6         2.1  virginica\n130          6.8         3.0          5.5         2.1  virginica\n131          6.7         3.3          5.7         2.1  virginica\n132          6.4         2.8          5.6         2.1  virginica\n133          6.9         3.1          5.4         2.1  virginica\n134          6.5         3.0          5.8         2.2  virginica\n135          7.7         3.8          6.7         2.2  virginica\n136          6.4         2.8          5.6         2.2  virginica\n137          6.4         3.2          5.3         2.3  virginica\n138          7.7         2.6          6.9         2.3  virginica\n139          6.9         3.2          5.7         2.3  virginica\n140          7.7         3.0          6.1         2.3  virginica\n141          6.9         3.1          5.1         2.3  virginica\n142          6.8         3.2          5.9         2.3  virginica\n143          6.7         3.0          5.2         2.3  virginica\n144          6.2         3.4          5.4         2.3  virginica\n145          5.8         2.8          5.1         2.4  virginica\n146          6.3         3.4          5.6         2.4  virginica\n147          6.7         3.1          5.6         2.4  virginica\n148          6.3         3.3          6.0         2.5  virginica\n149          7.2         3.6          6.1         2.5  virginica\n150          6.7         3.3          5.7         2.5  virginica"
+    "text": "Load packages with library() command\n\nTip: at the top of your Rmd file, create a chunk that loads all of the R packages you want to use in that file.\nUse the library() command to load each required package.\nPackages need to be reloaded every time you open Rstudio.\n\n\nlibrary(dplyr)    # run this every time you open Rstudio\n\n\nYou can use a function without loading the package with PackageName::CommandName\n\n\ndplyr::arrange(iris, Petal.Width)   # what does arrange do?\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width    Species\n1            4.9         3.1          1.5         0.1     setosa\n2            4.8         3.0          1.4         0.1     setosa\n3            4.3         3.0          1.1         0.1     setosa\n4            5.2         4.1          1.5         0.1     setosa\n5            4.9         3.6          1.4         0.1     setosa\n6            5.1         3.5          1.4         0.2     setosa\n7            4.9         3.0          1.4         0.2     setosa\n8            4.7         3.2          1.3         0.2     setosa\n9            4.6         3.1          1.5         0.2     setosa\n10           5.0         3.6          1.4         0.2     setosa\n11           5.0         3.4          1.5         0.2     setosa\n12           4.4         2.9          1.4         0.2     setosa\n13           5.4         3.7          1.5         0.2     setosa\n14           4.8         3.4          1.6         0.2     setosa\n15           5.8         4.0          1.2         0.2     setosa\n16           5.4         3.4          1.7         0.2     setosa\n17           4.6         3.6          1.0         0.2     setosa\n18           4.8         3.4          1.9         0.2     setosa\n19           5.0         3.0          1.6         0.2     setosa\n20           5.2         3.5          1.5         0.2     setosa\n21           5.2         3.4          1.4         0.2     setosa\n22           4.7         3.2          1.6         0.2     setosa\n23           4.8         3.1          1.6         0.2     setosa\n24           5.5         4.2          1.4         0.2     setosa\n25           4.9         3.1          1.5         0.2     setosa\n26           5.0         3.2          1.2         0.2     setosa\n27           5.5         3.5          1.3         0.2     setosa\n28           4.4         3.0          1.3         0.2     setosa\n29           5.1         3.4          1.5         0.2     setosa\n30           4.4         3.2          1.3         0.2     setosa\n31           5.1         3.8          1.6         0.2     setosa\n32           4.6         3.2          1.4         0.2     setosa\n33           5.3         3.7          1.5         0.2     setosa\n34           5.0         3.3          1.4         0.2     setosa\n35           4.6         3.4          1.4         0.3     setosa\n36           5.1         3.5          1.4         0.3     setosa\n37           5.7         3.8          1.7         0.3     setosa\n38           5.1         3.8          1.5         0.3     setosa\n39           5.0         3.5          1.3         0.3     setosa\n40           4.5         2.3          1.3         0.3     setosa\n41           4.8         3.0          1.4         0.3     setosa\n42           5.4         3.9          1.7         0.4     setosa\n43           5.7         4.4          1.5         0.4     setosa\n44           5.4         3.9          1.3         0.4     setosa\n45           5.1         3.7          1.5         0.4     setosa\n46           5.0         3.4          1.6         0.4     setosa\n47           5.4         3.4          1.5         0.4     setosa\n48           5.1         3.8          1.9         0.4     setosa\n49           5.1         3.3          1.7         0.5     setosa\n50           5.0         3.5          1.6         0.6     setosa\n51           4.9         2.4          3.3         1.0 versicolor\n52           5.0         2.0          3.5         1.0 versicolor\n53           6.0         2.2          4.0         1.0 versicolor\n54           5.8         2.7          4.1         1.0 versicolor\n55           5.7         2.6          3.5         1.0 versicolor\n56           5.5         2.4          3.7         1.0 versicolor\n57           5.0         2.3          3.3         1.0 versicolor\n58           5.6         2.5          3.9         1.1 versicolor\n59           5.5         2.4          3.8         1.1 versicolor\n60           5.1         2.5          3.0         1.1 versicolor\n61           6.1         2.8          4.7         1.2 versicolor\n62           5.8         2.7          3.9         1.2 versicolor\n63           5.5         2.6          4.4         1.2 versicolor\n64           5.8         2.6          4.0         1.2 versicolor\n65           5.7         3.0          4.2         1.2 versicolor\n66           5.5         2.3          4.0         1.3 versicolor\n67           5.7         2.8          4.5         1.3 versicolor\n68           6.6         2.9          4.6         1.3 versicolor\n69           5.6         2.9          3.6         1.3 versicolor\n70           6.1         2.8          4.0         1.3 versicolor\n71           6.4         2.9          4.3         1.3 versicolor\n72           6.3         2.3          4.4         1.3 versicolor\n73           5.6         3.0          4.1         1.3 versicolor\n74           5.5         2.5          4.0         1.3 versicolor\n75           5.6         2.7          4.2         1.3 versicolor\n76           5.7         2.9          4.2         1.3 versicolor\n77           6.2         2.9          4.3         1.3 versicolor\n78           5.7         2.8          4.1         1.3 versicolor\n79           7.0         3.2          4.7         1.4 versicolor\n80           5.2         2.7          3.9         1.4 versicolor\n81           6.1         2.9          4.7         1.4 versicolor\n82           6.7         3.1          4.4         1.4 versicolor\n83           6.6         3.0          4.4         1.4 versicolor\n84           6.8         2.8          4.8         1.4 versicolor\n85           6.1         3.0          4.6         1.4 versicolor\n86           6.1         2.6          5.6         1.4  virginica\n87           6.4         3.2          4.5         1.5 versicolor\n88           6.9         3.1          4.9         1.5 versicolor\n89           6.5         2.8          4.6         1.5 versicolor\n90           5.9         3.0          4.2         1.5 versicolor\n91           5.6         3.0          4.5         1.5 versicolor\n92           6.2         2.2          4.5         1.5 versicolor\n93           6.3         2.5          4.9         1.5 versicolor\n94           6.0         2.9          4.5         1.5 versicolor\n95           5.4         3.0          4.5         1.5 versicolor\n96           6.7         3.1          4.7         1.5 versicolor\n97           6.0         2.2          5.0         1.5  virginica\n98           6.3         2.8          5.1         1.5  virginica\n99           6.3         3.3          4.7         1.6 versicolor\n100          6.0         2.7          5.1         1.6 versicolor\n101          6.0         3.4          4.5         1.6 versicolor\n102          7.2         3.0          5.8         1.6  virginica\n103          6.7         3.0          5.0         1.7 versicolor\n104          4.9         2.5          4.5         1.7  virginica\n105          5.9         3.2          4.8         1.8 versicolor\n106          6.3         2.9          5.6         1.8  virginica\n107          7.3         2.9          6.3         1.8  virginica\n108          6.7         2.5          5.8         1.8  virginica\n109          6.5         3.0          5.5         1.8  virginica\n110          6.3         2.7          4.9         1.8  virginica\n111          7.2         3.2          6.0         1.8  virginica\n112          6.2         2.8          4.8         1.8  virginica\n113          6.1         3.0          4.9         1.8  virginica\n114          6.4         3.1          5.5         1.8  virginica\n115          6.0         3.0          4.8         1.8  virginica\n116          5.9         3.0          5.1         1.8  virginica\n117          5.8         2.7          5.1         1.9  virginica\n118          6.4         2.7          5.3         1.9  virginica\n119          7.4         2.8          6.1         1.9  virginica\n120          5.8         2.7          5.1         1.9  virginica\n121          6.3         2.5          5.0         1.9  virginica\n122          6.5         3.2          5.1         2.0  virginica\n123          5.7         2.5          5.0         2.0  virginica\n124          5.6         2.8          4.9         2.0  virginica\n125          7.7         2.8          6.7         2.0  virginica\n126          7.9         3.8          6.4         2.0  virginica\n127          6.5         3.0          5.2         2.0  virginica\n128          7.1         3.0          5.9         2.1  virginica\n129          7.6         3.0          6.6         2.1  virginica\n130          6.8         3.0          5.5         2.1  virginica\n131          6.7         3.3          5.7         2.1  virginica\n132          6.4         2.8          5.6         2.1  virginica\n133          6.9         3.1          5.4         2.1  virginica\n134          6.5         3.0          5.8         2.2  virginica\n135          7.7         3.8          6.7         2.2  virginica\n136          6.4         2.8          5.6         2.2  virginica\n137          6.4         3.2          5.3         2.3  virginica\n138          7.7         2.6          6.9         2.3  virginica\n139          6.9         3.2          5.7         2.3  virginica\n140          7.7         3.0          6.1         2.3  virginica\n141          6.9         3.1          5.1         2.3  virginica\n142          6.8         3.2          5.9         2.3  virginica\n143          6.7         3.0          5.2         2.3  virginica\n144          6.2         3.4          5.4         2.3  virginica\n145          5.8         2.8          5.1         2.4  virginica\n146          6.3         3.4          5.6         2.4  virginica\n147          6.7         3.1          5.6         2.4  virginica\n148          6.3         3.3          6.0         2.5  virginica\n149          7.2         3.6          6.1         2.5  virginica\n150          6.7         3.3          5.7         2.5  virginica"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#install-the-packages-listed-below",
@@ -179,7 +179,7 @@
     "href": "lessons/R05_Quarto_01/R05_Quarto_01.html#here-package",
     "title": "R05: Quarto in R",
     "section": "here package",
-    "text": "here package\n\n\n\nIllustration by Allison Horst"
+    "text": "here package\n\nIllustration by Allison Horst"
   },
   {
     "objectID": "lessons/R05_Quarto_01/R05_Quarto_01.html#here-package-1",
@@ -242,7 +242,7 @@
     "href": "lessons/R04_Reproducibility/R04_Reproducibility.html#folder-organization",
     "title": "R04: Reproducibility, File Organization, and Projects",
     "section": "Folder organization",
-    "text": "Folder organization\n\nMake a folder for our class!\n\nI suggest naming it something like EPI_525_F24 to indicate the class and the term\n\nMake these folders in your computer\n\nOnly make them in OneDrive if you have a desktop connection\n\n\n\n\n\nFor a project, I have the following folders\n\nBackground\nCode\nData_Raw\nData_Processed\nDissemination\nReports\nMeetings\n\n\n\n\nFor our class, I suggest making one folder for the course with the following folders in it:\n\nData\nHomework\nLessons\nR_activities\nAnd other folders if you want\n\n\n\n\n\nTake a few minutes to create these folders\n\n\n\n\n−+\n05:00"
+    "text": "Folder organization\n\nMake a folder for our class!\n\nI suggest naming it something like EPI_525_F24 to indicate the class and the term\n\nMake these folders in your computer\n\nOnly make them in OneDrive if you have a desktop connection\n\n\n\n\n\nFor a project, I have the following folders\n\nBackground\nCode\nData_Raw\nData_Processed\nDissemination\nReports\nMeetings\n\n\n\n\nFor our class, I suggest making one folder for the course with the following folders in it:\n\nData\nHomework\nLessons\nR_activities\nAnd other folders if you want\n\n\n\n\nTake a few minutes to create these folders\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "lessons/R04_Reproducibility/R04_Reproducibility.html#aside-folder-and-file-naming",
@@ -570,8 +570,8 @@
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#last-time",
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#last-time",
     "title": "R03: R Basics, part 2",
-    "section": "",
-    "text": "Downloaded R and Rstudio\nIf you are still having issues downloading, please come to my office hours!\nBecame familiar with the console and a script file\nDid some math calculations in R!\n\n \n\n\n\nAssigning things in R\nUsing functions to calculate\nFamiliarizing ourselves with common issues\nTroubleshooting with different tools\nGo over an example dataset"
+    "section": "Last time",
+    "text": "Last time\n\nDownloaded R and Rstudio\nIf you are still having issues downloading, please come to my office hours!\nBecame familiar with the console and a script file\nDid some math calculations in R!\n\n \nToday, we’re going to work on…\n\nAssigning things in R\nUsing functions to calculate\nFamiliarizing ourselves with common issues\nTroubleshooting with different tools\nGo over an example dataset"
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#where-are-we",
@@ -585,14 +585,14 @@
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#we-will-open-rstudio-on-our-computer-not-r",
     "title": "R03: R Basics, part 2",
     "section": "We will open RStudio on our computer (not R!)",
-    "text": "We will open RStudio on our computer (not R!)\n\n\n\nModern Dive"
+    "text": "We will open RStudio on our computer (not R!)\n\nModern Dive"
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#rstudio-anatomy",
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#rstudio-anatomy",
     "title": "R03: R Basics, part 2",
     "section": "RStudio anatomy",
-    "text": "RStudio anatomy\n\n\n\nEmma Rand"
+    "text": "RStudio anatomy\n\nEmma Rand"
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#variables-saved-r-objects",
@@ -753,7 +753,7 @@
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#inline-code",
     "title": "R03: R Basics, part 2",
     "section": "Inline code",
-    "text": "Inline code\n\nWith markdown you can also report R code output inline with the text instead of using a chunk.\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\nThe mean petal width for all 3 species combined is 1.2 (SD = 0.8) cm.\n\n\n\nReporting summary statistics this way in a report, makes the numbers computationally reproducible.\nFor example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values."
+    "text": "Inline code\n\nWith markdown you can also report R code output inline with the text instead of using a chunk.\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\nThe mean petal width for all 3 species combined is 1.2 (SD = 0.8) cm.\n\n\nReporting summary statistics this way in a report, makes the numbers computationally reproducible.\nFor example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values."
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#some-sources-for-useful-base-r-commands",
@@ -773,8 +773,8 @@
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-r-packages",
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-r-packages",
     "title": "R06: ggplot2, Part 1",
-    "section": "",
-    "text": "A good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4"
+    "section": "From last time: R Packages",
+    "text": "From last time: R Packages\nA good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\nModernDive Figure 1.4"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-install-the-packages-listed-below",
@@ -788,7 +788,7 @@
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-load-packages-with-library-command",
     "title": "R06: ggplot2, Part 1",
     "section": "From last time: Load packages with library() command",
-    "text": "From last time: Load packages with library() command\n\nTip: at the top of your Qmd file, create a chunk that loads all of the R packages you want to use in that file.\nUse the library() command to load each required package.\n\nPackages need to be reloaded every time you open Rstudio.\nlibrary() commands to load needed packages must be in the Qmd file\n\n\n\n# run these every time you open Rstudio\nlibrary(tidyverse) # contains ggplot2    \nlibrary(oibiostat)\nlibrary(ggridges)\nlibrary(janitor)\nlibrary(rstatix)\n\n\nAttaching package: 'rstatix'\n\n\nThe following object is masked from 'package:janitor':\n\n    make_clean_names\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\nlibrary(knitr)\nlibrary(gtsummary) # NEW!!\n\n\nYou can check whether a package has been loaded or not\n\nby looking at the Packages tab and\nseeing whether it has been checked off or not"
+    "text": "From last time: Load packages with library() command\n\nTip: at the top of your Qmd file, create a chunk that loads all of the R packages you want to use in that file.\nUse the library() command to load each required package.\n\nPackages need to be reloaded every time you open Rstudio.\nlibrary() commands to load needed packages must be in the Qmd file\n\n\n\n# run these every time you open Rstudio\nlibrary(tidyverse) # contains ggplot2    \nlibrary(oibiostat)\nlibrary(ggridges)\nlibrary(janitor)\nlibrary(rstatix)\nlibrary(knitr)\nlibrary(gtsummary) # NEW!!\n\n\nYou can check whether a package has been loaded or not\n\nby looking at the Packages tab and\nseeing whether it has been checked off or not"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#introduction-to-ggplot2",
@@ -809,7 +809,7 @@
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#works-best-with-tidy-data1",
     "title": "R06: ggplot2, Part 1",
     "section": "Works best with “tidy” data1",
-    "text": "Works best with “tidy” data1\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell."
+    "text": "Works best with “tidy” data1\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nSource: R for Data Science. Grolemund and Wickham."
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#basics-of-a-ggplot",
@@ -872,7 +872,7 @@
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#we-can-also-make-plots-with-a-single-variable",
     "title": "R06: ggplot2, Part 1",
     "section": "We can also make plots with a single variable",
-    "text": "We can also make plots with a single variable\n\nData: still mpg\nMapping: using aesthetic to specify only one variable in the x-axis (cty)\nLayers: using geom_histogram() to show a plot of the counts per cty (which is city mileage)\n\n\nggplot(mpg, aes(cty)) +\n  # to create a histogram\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
+    "text": "We can also make plots with a single variable\n\nData: still mpg\nMapping: using aesthetic to specify only one variable in the x-axis (cty)\nLayers: using geom_histogram() to show a plot of the counts per cty (which is city mileage)\n\n\nggplot(mpg, aes(cty)) +\n  # to create a histogram\n  geom_histogram()"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#lets-take-a-second-to-try-this-out",
@@ -886,14 +886,14 @@
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#we-can-add-more-to-plots",
     "title": "R06: ggplot2, Part 1",
     "section": "We can add more to plots!",
-    "text": "We can add more to plots!\nWe can change labels!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\")\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
+    "text": "We can add more to plots!\nWe can change labels!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\")"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#adding-more-to-plots",
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#adding-more-to-plots",
     "title": "R06: ggplot2, Part 1",
     "section": "Adding more to plots!",
-    "text": "Adding more to plots!\nIncrease (or decrease) text size so we can read it / it fits nicely!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\") +\n  theme(axis.text = element_text(size = 15), \n        axis.title = element_text(size = 15), \n        title = element_text(size = 15))\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`."
+    "text": "Adding more to plots!\nIncrease (or decrease) text size so we can read it / it fits nicely!\n\nggplot(mpg, aes(cty)) +\n  geom_histogram() +\n  labs(x = \"City mileage (mpg)\", y = \"Frequency\", \n       title = \"Histogram of city mileage\") +\n  theme(axis.text = element_text(size = 15), \n        axis.title = element_text(size = 15), \n        title = element_text(size = 15))"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#take-a-moment",
@@ -943,5 +943,54 @@
     "title": "Key Info and Announcements",
     "section": "Key Dates",
     "text": "Key Dates"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#we-will-open-rstudio-on-our-computer-not-r",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#we-will-open-rstudio-on-our-computer-not-r",
+    "title": "R02: R Basics",
+    "section": "We will open RStudio on our computer (not R!)",
+    "text": "We will open RStudio on our computer (not R!)\n\nModern Dive"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#rstudio-anatomy",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#rstudio-anatomy",
+    "title": "R02: R Basics",
+    "section": "RStudio anatomy",
+    "text": "RStudio anatomy\n\nEmma Rand"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#lets-code-r-basics",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#lets-code-r-basics",
+    "title": "R02: R Basics",
+    "section": "Let’s code! R Basics",
+    "text": "Let’s code! R Basics\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#coding-in-the-console",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#coding-in-the-console",
+    "title": "R02: R Basics",
+    "section": "Coding in the console",
+    "text": "Coding in the console\n\n\nWhen you first open R, the console should be empty.\n\n\n\n\n\n\nTyping and executing code in the console\n\nType code in the console (blue text)\nPress return to execute the code\nOutput shown below in black"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#we-have-an-option-of-where-to-write-our-code",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#we-have-an-option-of-where-to-write-our-code",
+    "title": "R02: R Basics",
+    "section": "We have an option of where to write our code",
+    "text": "We have an option of where to write our code\n\nWe can use the console directly\n\nBUT our work won’t be saved\n\n\n \n\nWe can also open up a file called a .R file\n\nHit the new document looking button, then click R script\nNow we can type in the R script\nIn the R script, we need to press cmd + return or ctrl + return to execute the code\nOutput will show up in the Console!\n\n\n \n\nExample by Nicky here!"
+  },
+  {
+    "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#math-calculations-using-r",
+    "href": "lessons/R02_Basics_01/R02_Basics_01.html#math-calculations-using-r",
+    "title": "R02: R Basics",
+    "section": "Math calculations using R",
+    "text": "Math calculations using R\n\nWe can use R as a calculator!!\nRules for order of operations are followed\nSpaces between numbers and characters are ignored\n\n \n\n\n\n10^2\n\n[1] 100\n\n3 ^ 7\n\n[1] 2187\n\n6/9\n\n[1] 0.6666667\n\n9-43\n\n[1] -34\n\n\n\n\n4^3-2* 7+9 /2\n\n[1] 54.5\n\n\nThe equation above is computed as \\[4^3 − (2 \\cdot 7) + \\frac{9}{2}\\]"
+  },
+  {
+    "objectID": "lessons/R04_Reproducibility/R04_Reproducibility.html#where-are-we",
+    "href": "lessons/R04_Reproducibility/R04_Reproducibility.html#where-are-we",
+    "title": "R04: Reproducibility, File Organization, and Projects",
+    "section": "Where are we?",
+    "text": "Where are we?"
   }
 ]

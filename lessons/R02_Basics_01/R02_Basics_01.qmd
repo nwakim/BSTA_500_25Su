@@ -2,7 +2,7 @@
 title: "R02: R Basics"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
-    data-background-color: "#3070BF"
+    data-background-color: "#cf3e53"
 date: "10/7/2024"
 format: 
   revealjs:
