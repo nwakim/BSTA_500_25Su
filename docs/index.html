@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to R</title>
+<title>Introduction to R programming for Biostatistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-05d3399907fdde4581e8afb1a97b09c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Introduction to R</span>
+    <span class="navbar-title">Introduction to R programming for Biostatistics</span>
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -121,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="course-information" class="level1">
 <h1>Course information</h1>
-<p>We will be working off these R tutorials from my Epi 525 class</p>
+<p>We will be working off <a href="https://ohsuitg-my.sharepoint.com/:f:/g/personal/wakim_ohsu_edu/EhTBEvNn3MZHvD0NfnARUR4BleqEPYWy2nxRKI17tij2dw?e=vYnQtD">these R tutorials</a> from my Epi 525 class</p>
 </section>
 <section id="schedule" class="level1">
 <h1>Schedule</h1>
@@ -130,144 +131,136 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 4%">
 <col style="width: 6%">
 <col style="width: 6%">
+<col style="width: 15%">
 <col style="width: 6%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Week</th>
 <th>Date</th>
-<th>Location</th>
+<th>Lesson</th>
 <th>Topic</th>
-<th style="text-align: left;">Video</th>
-<th>Activity</th>
+<th style="text-align: center;">Video</th>
+<th style="text-align: center;">Slides QMD</th>
+<th style="text-align: center;">Slides PDF</th>
+<th style="text-align: center;">Slides Notes</th>
+<th style="text-align: center;">Activity</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>4/3 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td>VPT 615B</td>
-<td>Intro</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/01_Best%20practices%20for%20analyzing%20large-scale%20health%20da.pdf?csf=1&amp;web=1&amp;e=T7PZVz">Best practices for analyzing large-scale health data from wearables and smartphone apps</a></li>
-</ul></td>
-<td></td>
+<td>7/9</td>
+<td>R01</td>
+<td>Download R and RStudio</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R01_Download_R/R01_Download_R.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R01_Download_R/R01_Download_R.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
+<td></td>
+<td></td>
+<td>R02</td>
+<td>R Basics, part 1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R02_Basics_01/R02_Basics_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R02_Basics_01/R02_Basics_01.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R02_Basics_01/R02_Basics_01_work.R"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
 <td>2</td>
-<td>4/11 <span class="citation" data-cites="1pm">@1pm</span></td>
-<td>Virtual</td>
-<td>Research Questions</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/02_FDA_w_R_S1.2.1.pdf?csf=1&amp;web=1&amp;e=co7HmO">Functional Data Analysis with R, Section 1.2.1</a></li>
-</ul></td>
-<td><ul>
-<li><p>Use R to explore NHANES data</p></li>
-<li><p>Reproduce Figure 1.1</p></li>
-</ul></td>
+<td>7/16</td>
+<td>R03</td>
+<td>R Basics, part 2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R03_Basics_02/R03_Basics_02.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R03_Basics_02/R03_Basics_02.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R03_Basics_02/R03_Basics_02_work.R"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>3</td>
-<td>4/17 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td>VPT 615B</td>
-<td>Prepare Data</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/03_acc-%20An%20R%20package%20to%20process,%20visualize,%20and%20analyze%20accelerometer%20data.pdf?csf=1&amp;web=1&amp;e=TZeOcW">acc: An R package to process, visualize, and analyze accelerometer data</a></li>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/03-02_Accelerometer%20Data%20Collection%20and%20Processing%20Criteria%20to%20Assess%20Physical%20Activity%20and%20Other%20Outcomes.pdf?csf=1&amp;web=1&amp;e=2mgitb">Accelerometer Data Collection and Processing Criteria to Assess Physical Activity and Other Outcomes: A Systematic Review and Practical Considerations</a></li>
-</ul></td>
-<td><ul>
-<li>Use some of the functions in <code>acc</code> to simulate and explore accelerometer data</li>
-</ul></td>
+<td>7/23</td>
+<td>R04</td>
+<td>Reproducibility, File Organization, and Projects</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R04_Reproducibility/R04_Reproducibility.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R04_Reproducibility/R04_Reproducibility.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>4</td>
-<td>4/24 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td><a href="https://ohsu.webex.com/meet/wakim">Virtual</a></td>
-<td>Prepare Data: Missing data</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/04_A%20framework%20for%20handling%20missing%20accelerometer%20out.pdf?csf=1&amp;web=1&amp;e=yGIUxv">A framework for handling missing accelerometer outcome data in trials</a></li>
-<li><a href="https://nwakim.github.io/S2024_BSTA_513/lectures/09_Missing_data/09_Missing_data_notes.pdf">Lecture from BSTA 513</a></li>
-</ul></td>
-<td><ul>
-<li>TBD</li>
-</ul></td>
+<td>7/30</td>
+<td>R05</td>
+<td>Intro to Quarto, packages, and importing data</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R05_Quarto_01/R05_Quarto_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R05_Quarto_01/R05_Quarto_01.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>5</td>
-<td>5/1 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td><a href="https://ohsu.webex.com/meet/wakim">Virtual</a></td>
-<td>Analyze Data</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/05_A%20Review%20of%20Statistical%20Analyses%20on%20Physical%20Activ.pdf?csf=1&amp;web=1&amp;e=g0Ktk7">A Review of Statistical Analyses on Physical Activity Data Collected from Accelerometers</a></li>
-</ul></td>
-<td><ul>
-<li>TBD: maybe nothing, maybe performing a similar summary</li>
-</ul></td>
+<td>8/6</td>
+<td>R06</td>
+<td><code>ggplot</code> , part 1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R06_ggplot_01/R06_ggplot_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R06_ggplot_01/R06_ggplot_01.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>6</td>
-<td>No class this week</td>
-<td></td>
-<td>Analyze Data 1: Cross-sectional studies</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/06_The%20associations%20of%20physical%20activity%20patterns%20and.pdf?csf=1&amp;web=1&amp;e=upyX0X">The associations of physical activity patterns and the triglyceride-glucose index in US adults: a secondary data analysis of NHANES (2007–2018)</a></li>
-</ul></td>
-<td></td>
+<td>8/13</td>
+<td>R07</td>
+<td>LaTeX in Quarto</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R07_LaTeX/R07_LaTeX.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R07_LaTeX/R07_LaTeX.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>7</td>
-<td>5/15 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td>VPT 615B</td>
-<td>Analyze Data 2: Longitudinal Data Analysis</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/07_Association%20of%20Longitudinal%20Activity%20Measures%20and%20.pdf?csf=1&amp;web=1&amp;e=WEdyn0">Association of Longitudinal Activity Measures and Diabetes Risk: An Analysis From the National Institutes of Health All of Us Research Program</a></li>
-</ul></td>
-<td></td>
+<td>8/20</td>
+<td>R08</td>
+<td>Transforming and subetting data with <code>tidyverse</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R08_tidyverse_01/R08_tidyverse_01.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R08_tidyverse_01/R08_tidyverse_01.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R08_tidyverse_01/R08_tidyverse_01_notes.pdf"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a> <a href="./lessons/R08_tidyverse_01/R08_tidyverse_01_notes.html"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>8</td>
-<td>5/22 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td><a href="https://ohsu.webex.com/meet/wakim">Virtual</a></td>
-<td>Analyze Data 3: Functional Data Analysis</td>
-<td style="text-align: left;"><ul>
-<li><p><a href="https://www.youtube.com/watch?v=FjIK3YzUGG4&amp;ab_channel=FunDataScience" class="uri">Youtube Video on Intro to Functional Data Analysis (~23 min)</a></p></li>
-<li><p><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/08_FDA_w_R_S4.0-4.1.pdf?csf=1&amp;web=1&amp;e=xbQEzt">Functional Data Analysis with R, Section 4.0-4.1</a></p></li>
-</ul></td>
-<td><ul>
-<li>Work through the R code for Section 4.0-4.1</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>5/29 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td>VPT 615B</td>
-<td>Analyze Data 3: Functional Data Analysis</td>
-<td style="text-align: left;"><ul>
-<li><a href="https://ohsuitg-my.sharepoint.com/:b:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/S25_BSTA_500/Student_files/Readings/09_FDA_w_R_S4.2-4.3.pdf?csf=1&amp;web=1&amp;e=5rLdBp">Functional Data Analysis with R, Section 4.2-4.3</a></li>
-</ul></td>
-<td><ul>
-<li>Work through the R code for Section 4.2-4.3</li>
-</ul></td>
+<td>8/27</td>
+<td>R09</td>
+<td>Summarizing data with <code>tidyverse</code> and Table 1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="./lessons/R09_tidyverse_02/R09_tidyverse_02.html"><iconify-icon inline="" icon="ri:slideshow-fill" style="font-size: 30px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R09_tidyverse_02/R09_tidyverse_02.pdf"><iconify-icon inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 28px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"><span style="color:#f8f5f0;"><a href="lessons/R09_tidyverse_02/R09_tidyverse_02_notes.pdf"><iconify-icon inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 29px;"></iconify-icon></a></span></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td>10</td>
-<td>6/5 <span class="citation" data-cites="4pm">@4pm</span></td>
-<td><a href="https://ohsu.webex.com/meet/wakim">Virtual</a></td>
-<td>Share Results</td>
-<td style="text-align: left;"><ul>
-<li>TBD</li>
-</ul></td>
+<td>9</td>
+<td>9/3</td>
+<td>VPT 627</td>
 <td></td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td></td>
-<td></td>
-<td></td>
-<td style="text-align: left;"></td>
-<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
